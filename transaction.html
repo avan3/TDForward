@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>TD Forward - The Dream Team</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src=""></script>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <img src="logo.png" alt="logo">
+        </header>
+        <br>
+        <h3>Matched Transactions</h3>
+        <br>
+        <div id="trans_record"></div>
+        <script>
+            var trans_record = ["a", "b", "c"];
+            var dirList = document.querySelector("#trans_record");
+            var unorderedList = "";
+            for (var i = 0; i < trans_record.length; i++) {
+                unorderedList += "<ul><input type=\"radio\" name=\"trans_record\" id=c" + (i + 2) + ">" + trans_record[i] + "</ul>";
+            }
+            dirList.innerHTML = unorderedList;
+        </script>
+    <footer>
+        &copy; 2018 The Dream Team
+    </footer>
+</body>
+</html>
