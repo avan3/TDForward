@@ -38,7 +38,9 @@ app.get("/", (req, res) => {
 });
 
 // setup http server to listen on HTTP_PORT
-app.listen(HTTP_PORT);
+app.listen(HTTP_PORT, function(){
+  console.log("Server running on: " + HTTP_PORT);
+});
 
 function handleError(err) {
   let outErr = err;
