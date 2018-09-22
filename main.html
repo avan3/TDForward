@@ -18,11 +18,13 @@
         <h3>Welcome & Thank you msg...</h3>
 
         <section class="main">
-            <form id="signup" action="" method="post" onchange="validation()" onsubmit="return validation()">
+            <form id="signup" action="transaction.html" method="post" onchange="validation()" onsubmit="return validation()">
                 <div>
                 <fieldset>
-                        <h6>Age</h6>
-                        <select class="custom-select custom-select-lg mb-3" name="forward_pref1" id="forward_pref1">
+                            <div class="form-row">
+                                <div class ="form-group col-md-6">
+                        <label for="forward_pref1">Age</label>
+                        <select class="opt custom-select custom-select-lg mb-3" name="forward_pref1" id="forward_pref1">
                             <optgroup>
                                 <option value="a1" selected>All</option>>
                                 <option value="a2">12 - 18</option>>
@@ -34,8 +36,10 @@
                                 <option value="a8">65+</option>>
                             </optgroup>
                         </select>
-                        <h6>Work</h6>
-                        <select class="custom-select custom-select-lg mb-3" name="forward_pref2" id="forward_pref2">
+                            </div>
+                            <div class="form-group col-md-6">
+                        <label for="forward_pref2">Work</label>
+                        <select class="opt custom-select custom-select-lg mb-3" name="forward_pref2" id="forward_pref2">
                             <optgroup>
                                 <option value="w1" selected>All</option>>
                                 <option value="w2">Full-time employee</option>>
@@ -43,8 +47,10 @@
                                 <option value="w4">N/A</option>>
                             </optgroup>
                         </select>
-                        <h6>Income</h6>
-                        <select class="custom-select custom-select-lg mb-3" name="forward_pref3" id="forward_pref3">
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="forward_pref3">Income</label>
+                        <select class="opt custom-select custom-select-lg mb-3" name="forward_pref3" id="forward_pref3">
                             <optgroup>
                                 <option value="i1" selected>All</option>>
                                 <option value="i2">$0 - $19,999</option>>
@@ -55,17 +61,29 @@
                                 <option value="i7">$100,000+</option>>
                             </optgroup>
                         </select>
+                        </div>
+                        <div class="form-group col-md-6">
+                        <label for="tag">Transaction Category</label>
+                    <select class="opt custom-select custom-select-lg mb-3" name="tag" id="tag">
+                        <optgroup>
+                            <option hidden="">Please choose one of the following category</option>
+                            <option value="t1">Auto and Transport</option>
+                            <option value="t2">Bills and Utilities</option>
+                            <option value="t3">Entertainment</option>
+                            <option value="t4">Food and Dining</option>
+                            <option value="t5">Mortgage and Rent</option>
+                            <option value="t6">Shopping</option>
+                        </optgroup>
+                    </select>
+                    </div>
+                    </fieldset>
                 </div>
-                    <div>
-                    Matched Transactions
-                    <ul><input type="radio" name="matched_trans" id="1" value="1" checked>...</ul>
-                </div>
+            </div>
                 </fieldset>
                 <br />
                 <div>
                 <input  type="reset" class="btn btn-secondary btn-lg" value="Clear">
                 <input type="submit" class="btn btn-primary btn-lg" value="Submit">
-                </div>
             </form>
         </section>
 
