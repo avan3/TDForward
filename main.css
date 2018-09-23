@@ -1,3 +1,10 @@
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header, footer {
+        width: 100%;
+    }
+    
+}
 html {
     padding: 0 20px;
 }
@@ -49,6 +56,10 @@ h1 {
     background-color: #008a00;
     cursor: pointer;
     color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #007c16;
 }
 
 .btn-seconday {
