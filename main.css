@@ -1,3 +1,7 @@
+html {
+    padding: 0 20px;
+}
+
 header {
     background-color: #12412A;
     width: 100%;
@@ -11,19 +15,31 @@ img {
 }
 
 footer{
+    clear: both;
     background-color: #ececec;
-    padding: 38px 0;
-    position: absolute;
-    bottom: 0;
+    position: fixed;
+    bottom: 10px;
+    padding: 35px 15px;
     right: 0;
     width: 100%;
-    height: 100px;
+    height: 35px;
     margin-top: 1em;
+    vertical-align: middle;
 }
 
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI;
 }
+
+.buttons {
+    text-align: center;
+}
+
+.buttons input {
+    margin: 0 10px;
+
+}
+
 
 h1 {
     color: #003f2d;
@@ -51,12 +67,7 @@ fieldset {
     color: #003f2d;
 }
 
-.btn {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    margin: 0 0.5em;
-}
+
 
 label {
     color: #003f2d;
