@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <title>TD Forward - The Dream Team</title>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src=""></script>
+    <link rel="stylesheet" href="transaction.css">
+    <link rel="stylesheet" href="main.css">
+    <script type="application/javascript" src="./request.js"></script>
 </head>
-
 <body>
     <div class="main-container">
         <header>
@@ -16,25 +16,23 @@
         <br>
         <h3>Matched Transactions</h3>
         <br>
-        <div id="trans_record"></div>
-        <script>
-            var trans_record = ["a", "b", "c"];
-            var dirList = document.querySelector("#trans_record");
-            var unorderedList = "";
-            for (var i = 0; i < trans_record.length; i++) {
-                unorderedList += "<ul><input type=\"radio\" name=\"trans_record\" id=c" + (i + 2) + ">" + trans_record[i] + "</ul>";
-            }
-            dirList.innerHTML = unorderedList;
-        </script>
-    </div>
-    <div class="side-panel">
-            <h6>The Amount You Would Like to Forward:</h6>
-            <input type="text" id="forward_amt">
-        </div>
-        <br>
-        <input type="reset" value="Clear">
-        <input type="submit" value="Submit" onclick=display()>
-    <footer >
+        <form name="output" method="POST" action="" onsubmit="">
+            <table>
+            <thead>
+                <tr>
+                    <th>Select One:</th>
+                    <th>Date</th>
+                    <th>Company Name</th>
+                    <th>Category</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="outputTable"></tbody>
+            </table>
+            <input class="buttons btn-primary" type="submit" value="submit">
+        </form>
+        
+    <footer>
         &copy; 2018 The Dream Team
     </footer>
 </body>
