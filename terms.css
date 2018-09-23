@@ -1,6 +1,4 @@
-
-
-button {
+.button {
     display: block;
     width: 100%;
     color: #ffffff;
@@ -13,6 +11,21 @@ button {
     margin-top: 3px;
 }
 
-button:hover {
+.btn-primary:hover {
     background-color: #007c16;
+}
+
+.container {
+    left: 25%;
+    padding: 0 25%;
+}
+
+.panel-body {
+    overflow-y: scroll;
+    text-align: left;
+    width: 200%;
+}
+
+.TC {
+    text-align: center;
 }
